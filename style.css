@@ -1,0 +1,126 @@
+.card-box img{
+    width: 500px;
+    height: auto;
+    filter: drop-shadow(10px 10px 30px )#00000049;
+    transition: all 0.75s ease-in-out;
+
+}
+.card-content h2{
+    font-weight: 800;
+
+}
+.card-content .btn{
+    color: white;
+    font-weight: 600;
+    background-color: #8e5d20;
+    border: 2px solid #8e5d20;
+    transition: 0.5s;}
+
+.card-content .btn:hover{
+        color: #8e5d20;
+        background: transparent;
+        border: 2px solid #8e5d20;
+        
+
+       
+    
+}
+
+.card-box{
+        padding: 20px 50px;
+        border-radius: 30px;
+        width: 600px;
+        height: 540px;
+        transition-delay: 0.5s;
+        transition: all 0.5s ease-in-out;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+    }
+    .card-box::after{
+        content: "";
+        position: absolute;
+        background-color: #f7efe5;
+        height: 350px;
+        width: 350px;
+        z-index: -1;
+        border-radius: 50%;
+        transition: all 0.5s ease-in-out;
+}
+
+
+
+
+
+.card-content{
+    min-width: 0px;
+    width: 100%;
+    scale: 0;
+    opacity: 0;
+    transition: all 0.1s ease-in-out;}
+    .card-box:hover{
+        min-width: 400px;
+        scale: 1;
+        transition: all 0.5s ease-in-out;
+    }
+    .card-box:hover .card-content{
+        transition-delay: 0.3s;
+        opacity: 1;
+
+    }
+    .card-box:hover{
+        width: 1000px;
+
+    }
+    .card-box::after{
+        scale: 5;
+        background-color: #d4b48f;
+        transition: all 1 ease-in-out;
+    }
+.card-box:hover img{
+    scale: 1.2;
+    transform: rotate(15deg);
+}
+.card-content p{
+    padding: 10px 0;
+    font-weight: 600;
+
+}
+h1{
+position: absolute;
+display: block;
+align-items: center;
+justify-content: center;
+scale: 0.8;
+transition: all 0.5 ease-in-out;
+cursor: pointer;
+}
+body{
+    background-image: url(IMG_20230223_210510_931.jpg) center no-repeat;
+    width: max-content;
+    height:max-content;
+}
+.contact{
+    left: 1000px;
+    position: absolute;
+    display: flex;
+    top: 20px;
+}
+.contact a{
+    left: 1000px;
+    top: 3000px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact a ul{
+    left: 1000px;
+    top: 3000px;
+    display: flex;
+}
+div img{
+    left:300px;
+}
